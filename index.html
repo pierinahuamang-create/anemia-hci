@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anemia - Guía educativa</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <main>
+
+    <!-- Pantalla principal: ¿Qué es la anemia? -->
+    <section id="anemia" class="seccion contenedor" aria-labelledby="titulo-anemia">
+      <header class="seccion-encabezado">
+        <p class="etiqueta">Conoce para cuidarte</p>
+        <h2 id="titulo-anemia">¿Qué es la anemia?</h2>
+        <p>La anemia ocurre cuando la sangre no tiene suficientes glóbulos rojos sanos o hemoglobina para transportar el oxígeno que el cuerpo necesita. La falta de hierro es una causa frecuente, pero no la única.</p>
+      </header>
+
+      <div class="anemia-contenido">
+        <div class="sintomas">
+          <h3 id="titulo-sintomas">Algunas señales que podrías notar</h3>
+
+          <ul class="tarjetas-sintomas" aria-labelledby="titulo-sintomas">
+            <li class="tarjeta-sintoma">
+              <!-- Batería baja -->
+              <svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="16" height="10" rx="2"/>
+                <path d="M22 11v2M6 10v4"/>
+              </svg>
+              <h4>Cansancio o debilidad</h4>
+              <p>Sentirte con menos energía de lo habitual.</p>
+            </li>
+
+            <li class="tarjeta-sintoma">
+              <!-- Diana -->
+              <svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="12" cy="12" r="1"/>
+              </svg>
+              <h4>Dificultad para concentrarte</h4>
+              <p>Notar que te cuesta mantener la atención.</p>
+            </li>
+
+            <li class="tarjeta-sintoma">
+              <!-- Espiral -->
+              <svg class="icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 12a1 1 0 0 1 2 0 3 3 0 0 1-6 0 5 5 0 0 1 10 0 7 7 0 0 1-14 0"/>
+              </svg>
+              <h4>Mareos o palidez</h4>
+              <p>Sensación de giro o piel más pálida de lo normal.</p>
+            </li>
+          </ul>
+
+          <a class="boton" href="#alimentos">
+            Siguiente: descubre alimentos <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <aside class="aviso-salud" role="note" aria-labelledby="titulo-aviso">
+          <svg class="aviso-icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4M12 8h.01"/>
+          </svg>
+          <h3 id="titulo-aviso">La información ayuda; el diagnóstico lo hace un profesional</h3>
+          <p>Estos síntomas pueden tener distintas causas. Si te preocupan, conversa con un profesional de salud. Esta guía es educativa y no reemplaza una evaluación médica.</p>
+          <p class="aviso-nota">No te automediques ni tomes suplementos de hierro sin indicación profesional.</p>
+          <p class="aviso-urgente">Si tienes dificultad para respirar o dolor en el pecho, busca atención médica de inmediato.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Interacción: validación de formulario -->
+    <section id="consejos" class="seccion contenedor" aria-labelledby="titulo-consejos">
+      <div class="seccion-encabezado">
+        <h2 id="titulo-consejos">Recibe consejos por correo</h2>
+        <p>Te enviaremos información educativa sobre alimentación y cuidado.</p>
+      </div>
+
+      <form id="form-contacto" class="formulario" novalidate>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" required autocomplete="email"
+               placeholder="nombre@correo.com" aria-describedby="msg-correo">
+        <p id="msg-correo" class="mensaje" role="alert"></p>
+        <button type="submit" class="boton">Recibir consejos</button>
+      </form>
+    </section>
+
+    <!-- Destino del botón "Siguiente" (temporal) -->
+    <section id="alimentos" class="seccion contenedor" aria-labelledby="titulo-alimentos">
+      <div class="seccion-encabezado">
+        <h2 id="titulo-alimentos">Alimentos que ayudan</h2>
+        <p>Aquí irá la siguiente pantalla de tu proyecto.</p>
+        <a class="enlace" href="#anemia">Volver al inicio</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
